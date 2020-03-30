@@ -9,7 +9,7 @@ namespace Asyncs2
     public class Team
     {
         [JsonIgnore]
-        public int id { get; set; }
+        public int Id { get; set; }
         public string school { get; set; }
         public string mascot { get; set; }
         [JsonIgnore]

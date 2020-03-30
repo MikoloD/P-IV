@@ -60,7 +60,6 @@ namespace Asyncs2
 
             var responses = await Task.WhenAll(tasks);
             var coaches = responses.SelectMany(x => JsonSerializer.Deserialize<Coach[]>(x.Content));
-            db.SaveChanges();
             foreach (var elem in coaches)
             {
                 resoult.Single(x =>
