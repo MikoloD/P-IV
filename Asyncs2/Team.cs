@@ -8,9 +8,11 @@ namespace Asyncs2
 {
     public class Team
     {
+        [JsonIgnore]
         public int id { get; set; }
         public string school { get; set; }
         public string mascot { get; set; }
-        public virtual CoachTB CoachNavigation { get; set; }
+        [JsonIgnore]
+        public List<Coach> CoachNavigation { get; set; } = new List<Coach>();
     }
 }
