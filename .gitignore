@@ -1,0 +1,6 @@
+*.vs
+packages
+projektWinForms
+bin
+obj
+lab6

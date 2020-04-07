@@ -11,10 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "EntityFr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asyncs2", "Asyncs2\Asyncs2.csproj", "{71296DE6-3522-47D6-B1A9-3110374B7B06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dziedziczenie", "Dziedziczenie\Dziedziczenie.csproj", "{F019ECB7-D21B-4B98-94F9-490615390DA1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab5_2", "lab5_2\lab5_2.csproj", "{A5D393EA-2F0D-48E9-A0E2-3E263A8AC033}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab5", "Lab5", "{307FFD48-F518-42DA-B9B1-198B99F1C300}"
 EndProject
 Global
@@ -39,21 +35,9 @@ Global
 		{71296DE6-3522-47D6-B1A9-3110374B7B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71296DE6-3522-47D6-B1A9-3110374B7B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71296DE6-3522-47D6-B1A9-3110374B7B06}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F019ECB7-D21B-4B98-94F9-490615390DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F019ECB7-D21B-4B98-94F9-490615390DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F019ECB7-D21B-4B98-94F9-490615390DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F019ECB7-D21B-4B98-94F9-490615390DA1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5D393EA-2F0D-48E9-A0E2-3E263A8AC033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5D393EA-2F0D-48E9-A0E2-3E263A8AC033}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5D393EA-2F0D-48E9-A0E2-3E263A8AC033}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5D393EA-2F0D-48E9-A0E2-3E263A8AC033}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{F019ECB7-D21B-4B98-94F9-490615390DA1} = {307FFD48-F518-42DA-B9B1-198B99F1C300}
-		{A5D393EA-2F0D-48E9-A0E2-3E263A8AC033} = {307FFD48-F518-42DA-B9B1-198B99F1C300}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B9888A2-6F84-4045-8339-B74A981CF181}
