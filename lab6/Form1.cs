@@ -56,6 +56,11 @@ namespace lab6
         private void timer1_Tick(object sender, EventArgs e)
         {
             var rand = new Random();
+            var nowaLista = Enumerable.Range(1, 100);
+            for(int i=0;i<10;i++)
+            {
+                var randomNumber = rand.Next(lista.Count())
+            }
             var number = rand.Next(100).ToString();
             textBox1.Text = number.ToString();
             couter++;
