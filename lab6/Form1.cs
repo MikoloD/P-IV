@@ -59,7 +59,7 @@ namespace lab6
             var nowaLista = Enumerable.Range(1, 100);
             for(int i=0;i<10;i++)
             {
-                var randomNumber = rand.Next(lista.Count())
+                var randomNumber = rand.Next(lista.Count());
             }
             var number = rand.Next(100).ToString();
             textBox1.Text = number.ToString();
