@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gra_wyklad", "Gra_wyklad\Gr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PierwszyProjekt", "PierwszyProjekt\PierwszyProjekt.csproj", "{B6A046D0-7503-4A4F-8C42-766F284D64C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_1", "WPF_1\WPF_1.csproj", "{8BA9A2FD-3473-429D-A2DA-FE62423BEB71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{B6A046D0-7503-4A4F-8C42-766F284D64C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6A046D0-7503-4A4F-8C42-766F284D64C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6A046D0-7503-4A4F-8C42-766F284D64C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA9A2FD-3473-429D-A2DA-FE62423BEB71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA9A2FD-3473-429D-A2DA-FE62423BEB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA9A2FD-3473-429D-A2DA-FE62423BEB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA9A2FD-3473-429D-A2DA-FE62423BEB71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
