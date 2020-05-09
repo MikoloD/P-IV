@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PierwszyProjekt", "Pierwszy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_1", "WPF_1\WPF_1.csproj", "{8BA9A2FD-3473-429D-A2DA-FE62423BEB71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Bind", "WPF_Bind\WPF_Bind.csproj", "{CDB1C1EB-245A-4208-AD19-B17B1D2AA17E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{8BA9A2FD-3473-429D-A2DA-FE62423BEB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BA9A2FD-3473-429D-A2DA-FE62423BEB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BA9A2FD-3473-429D-A2DA-FE62423BEB71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDB1C1EB-245A-4208-AD19-B17B1D2AA17E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB1C1EB-245A-4208-AD19-B17B1D2AA17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB1C1EB-245A-4208-AD19-B17B1D2AA17E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB1C1EB-245A-4208-AD19-B17B1D2AA17E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
