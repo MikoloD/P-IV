@@ -1,0 +1,49 @@
+﻿<Window x:Class="WPF_Resc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Resc"
+        mc:Ignorable="d"
+        
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+                <ResourceDictionary Source="Dictionary2.xaml"/>
+                <ResourceDictionary>
+                    <SolidColorBrush x:Key="Kolor" Color="AliceBlue"/>
+                    <local:MySizeConverter x:Key="MySizeConverter"/>
+                    <local:MyColorConverter x:Key="MyColorConverter"/>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Window.Resources>
+    <Grid>
+        <Rectangle Fill="{DynamicResource Kolor}" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0"/>
+        <Rectangle Fill="{DynamicResource Kolor}" HorizontalAlignment="Left" Height="89" Stroke="Black" VerticalAlignment="Top" Width="794" Margin="0,331,-0.4,0"/>
+        <Grid Margin="49,136,615.6,168">
+            <Label Content="{StaticResource MojTekst}" HorizontalAlignment="Left" Margin="34,0,0,0" VerticalAlignment="Top"/>
+            <Label Content="{StaticResource MojTekst}" HorizontalAlignment="Left" Margin="34,31,0,0" VerticalAlignment="Top"/>
+            <Button Content="Wybierz plik" HorizontalAlignment="Left" Margin="0,62,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click_2"/>
+            <Button Content="Zmien Resource" HorizontalAlignment="Left" Margin="0,87,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click"/>
+        </Grid>
+        <Rectangle x:Name="MyRectangle" HorizontalAlignment="Left" Margin="572,169,0,0" Stroke="Black" VerticalAlignment="Top" 
+                   Height="{Binding Size, Converter={StaticResource MySizeConverter}}"
+                   Width="{Binding Size, Converter={StaticResource MySizeConverter}, Mode=OneWay}">
+            <Rectangle.Fill>
+                <MultiBinding Converter="{StaticResource MyColorConverter}">
+                    <Binding Path="Red"/>
+                    <Binding Path="Green"/>
+                    <Binding Path="Blue"/>
+                </MultiBinding>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="375,240,0,0" TextWrapping="Wrap" Text="{Binding Size}" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Content="Red" HorizontalAlignment="Left" Margin="353,119,0,0" VerticalAlignment="Top" IsChecked="{Binding Red}"/>
+        <CheckBox Content="Green" HorizontalAlignment="Left" Margin="353,139,0,0" VerticalAlignment="Top" IsChecked="{Binding Green}"/>
+        <CheckBox Content="Blue" HorizontalAlignment="Left" Margin="353,159,0,0" VerticalAlignment="Top" IsChecked="{Binding Blue}"/>
+    </Grid>
+</Window>
