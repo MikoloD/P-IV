@@ -1,0 +1,24 @@
+﻿<Window x:Class="lab15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext >
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+        
+    <Grid>
+        <Label Content="Rejstraja" HorizontalAlignment="Left" Margin="370,10,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="388,43,0,0" TextWrapping="Wrap" Text="{Binding Model.Email, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="388,74,0,0" TextWrapping="Wrap" Text="{Binding Model.Password, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Content="Nie jestem Robotem" HorizontalAlignment="Left" Margin="370,114,0,0" VerticalAlignment="Top" IsChecked="{Binding Model.IsHuman, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="345,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hasło" HorizontalAlignment="Left" Margin="343,71,0,0" VerticalAlignment="Top"/>
+        <Button Content="Zarejstruj" HorizontalAlignment="Left" Margin="370,151,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.536,1.865" Command="{Binding RegisterCommand}" CommandParameter="{Binding Model}"/>
+        <TextBox HorizontalAlignment="Left" Height="160" Margin="345,175,0,0" TextWrapping="Wrap" Text="{Binding Model.Errors}" VerticalAlignment="Top" Width="163"/>
+
+    </Grid>
+</Window>
