@@ -14,10 +14,8 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="tlo.png"/>
-        </Grid.Background>
+    <Grid Background="LightYellow">
+        
         <Label Content="MP3 Player" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" Width="400" FontSize="72" FontFamily="Rage Italic" Foreground="{DynamicResource ForeKolor}"/>
         <Button Content="Dodaj utwór" HorizontalAlignment="Left" Margin="50,100,0,0" VerticalAlignment="Top" Width="200" Height="30" FontFamily="Rage Italic" Background="Azure" Foreground="{DynamicResource ForeKolor}" FontSize="20" Click="Add_Button_Click"/>
         <Button Content="Dodaj do playlisty" HorizontalAlignment="Left" Margin="550,100,0,0" VerticalAlignment="Top" Width="200" Height="30" FontFamily="Rage Italic" Background="Azure" Foreground="{DynamicResource ForeKolor}" FontSize="20" Click="PlayListAdd_Button_Click"/>
