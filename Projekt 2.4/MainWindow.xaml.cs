@@ -32,9 +32,16 @@ namespace Projekt_2._4
         private List<Utwor> playList = new List<Utwor>();
         private void Najpop()
         {
-            var najpopularniejsze = db.Utwory.Max(x => x.Popularity);
-            Utwor displayed = db.Utwory.Where(x => x.Popularity == najpopularniejsze).First();
-            Najpopularnirjsze.Text = $"Najpopularniejszy utwór to: {displayed.Name}";
+            if (db.Utwory.Count() != 0)
+            {
+                var najpopularniejsze = db.Utwory.Max(x => x.Popularity);
+                Utwor displayed = db.Utwory.Where(x => x.Popularity == najpopularniejsze).First();
+                Najpopularnirjsze.Text = $"Najpopularniejszy utwór to: {displayed.Name}";
+            }
+            else
+            {
+                Najpopularnirjsze.Text = $"Brak najpopularniejszego utworu";
+            }
         }
         private Utwor TakeFromComboBox(ComboBox myCombobox)
         {
